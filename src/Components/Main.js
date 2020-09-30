@@ -1,18 +1,21 @@
 import React from 'react'
-import {Route, Switch} from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import About from './About'
 import stockData from './stock-data'
 import Home from './Home'
-import Dashboard from  './Dashboard'
+import Dashboard from './Dashboard'
 import Stocks from './Stocks'
- 
+import TableHeader from './TableHeader'
+
+
 
 const Main = (props) => {
     console.log('main', props)
 
-    return(
+    return (
         // using code from bitcoin activity as a starting point
         <main>
+
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -23,9 +26,9 @@ const Main = (props) => {
                 />
                 <Route
                     path="/stocks/"
-                    render={props => <Dashboard  {...props} stockData={stockData}/>}
+                    render={props => <><TableHeader /> <Dashboard  {...props} stockData={stockData} /></>}
                 />
-                
+
                 <Route path="/about">
                     <About />
                 </Route>

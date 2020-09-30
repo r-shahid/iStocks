@@ -1,52 +1,15 @@
 .App {
   text-align: center;
-  font-family: serif;
+  font-family: sans-serif;
   color: black;
 }
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
- 
-} */
-/* 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 .navbar{
 background-color: #6532CB;
 display: flex;
 align-items: center;
 height: 60px;
-/* width: 100%; */
 padding: 0 20px;
-/* padding-right: 20px; */
 }
 
 .navbar a {
@@ -59,4 +22,48 @@ padding: 0 20px;
 
 .navbar .logo {
   font-size: 30px;
+}
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 0 60px;
+}
+
+
+table {
+  width: 100%;
+  /* display:; */
+  padding: 0 20px;
+  margin-top: 0px;
+
+
+}
+tr {
+  background-color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+
+}
+
+td {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+
+.name{
+  color: #EF233C;
+}
+
+.stocks-info {
+  text-align: left;
+  padding: 20px;
+}
+
+.stocks-info h2, h3 {
+  margin-left: 20px;
 }
