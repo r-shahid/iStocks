@@ -1,17 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Dashboard = (props) => {
 // basing this off the Currencies component from Bitcoin-Starter
 console.log(props)
-    let stockInfo = props.stockInfo.map((item, index) => {
+    let stockData = props.stockData.map((item, index) => {
         return (
-            <div className="stock-links">
-                <Link to={"/stocks/" + item.name}>{item.name}</Link>
-            </div>
+            <Link key ={index} to={`/stocks/${item.name}`}><li>{item.name}</li>
+            </Link>
         );
     });
 
-    return <div>{list}</div>;
+    return <ul>{stockData}</ul>;
 
 }
 
