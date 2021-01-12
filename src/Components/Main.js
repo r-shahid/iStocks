@@ -21,7 +21,7 @@ const Main = (props) => {
                     <Home />
                 </Route>
                 <Route
-                    path='/stocks/:name'
+                    path='/stocks/:symbol'
                     render={props => <Stocks stockData={stockData} {...props} />}
                 />
                 <Route

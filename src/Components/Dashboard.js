@@ -17,7 +17,7 @@ const Dashboard = (props) => {
                     <th>Change</th>
                 </tr> */}
                 <tr>
-                    <Link key={index} to={`/stocks/${item.name}`}><td className='name'>{item.name}</td>
+                    <Link key={index} to={`/stocks/${item.symbol}`}><td className='name'>{item.name}</td>
                     </Link>
                     <td className='price'>{item.lastPrice}</td>
                     <td className='change'>{item.change}</td>
